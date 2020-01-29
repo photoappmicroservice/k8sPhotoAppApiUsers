@@ -10,7 +10,7 @@
         chdir: "/home/ansadmin/jenkins/{{ appName }}/workspace"
     - name: Download WAR file to the Tomcat webapps directory
       maven_artifact:
-        group_id: com.virtualpairprogrammers
+        group_id: com.mars.photoapp
         artifact_id: "{{ appName }}"
         extension: jar
         repository_url: "{{ ARTIFACTORY_URL }}"
