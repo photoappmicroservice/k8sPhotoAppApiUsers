@@ -9,7 +9,7 @@
 	</parent>
 	<groupId>com.mars.photoapp</groupId>
 	<artifactId>k8sphotoappapiusers</artifactId>
-	<version>0.6.0</version>
+	<version>0.6.1-SNAPSHOT</version>
 	<name>k8sphotoappapiusers</name>
 	<description>Users microservice</description>
 	<packaging>jar</packaging>
@@ -24,7 +24,7 @@
 		<connection>scm:git:git@github.com:photoappmicroservice/k8sPhotoAppApiUsers.git</connection>
 		<url>git@github.com:photoappmicroservice/k8sPhotoAppApiUsers.git</url>
 		<developerConnection>scm:git:git@github.com:photoappmicroservice/k8sPhotoAppApiUsers.git</developerConnection>
-		<tag>v0.6.0</tag>
+		<tag>HEAD</tag>
 	</scm>
 
 	<distributionManagement>
