@@ -23,9 +23,9 @@
 	</properties>
 
 	<scm>
-		<connection>scm:git:git@github.com:vijayasjava/k8sPhotoAppApiUsers.git</connection>
-		<url>git@github.com:vijayasjava/k8sPhotoAppApiUsers.git</url>
-		<developerConnection>scm:git:git@github.com:vijayasjava/k8sPhotoAppApiUsers.git</developerConnection>
+		<connection>scm:git:git@github.com:photoappmicroservice/k8sPhotoAppApiUsers.git</connection>
+		<url>git@github.com:photoappmicroservice/k8sPhotoAppApiUsers.git</url>
+		<developerConnection>scm:git:git@github.com:photoappmicroservice/k8sPhotoAppApiUsers.git</developerConnection>
 		<tag>HEAD</tag>
 	</scm>
 
