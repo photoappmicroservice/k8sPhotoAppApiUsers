@@ -8,9 +8,11 @@ node {
    def SERVICE_NAME
    def NREPOSITORY_TAG
    def appname
+   def ORGANIZATION_NAME
     
    stage('Prepare') {
       mvnHome = tool 'MAVENHOME'
+      ORGANIZATION_NAME='photoappmicroservice'
    }
 
    stage('Checkout') {
@@ -45,7 +47,7 @@ node {
       tagVersion = 'v'+artifactVersion
       name = pom.name
       appname = name
-      REPOSITORY_TAG="${env.DOCKERHUB_USERNAME}/${env.ORGANIZATION_NAME}-${name}:${artifactVersion}"
+      REPOSITORY_TAG="${env.DOCKERHUB_USERNAME}/${ORGANIZATION_NAME}-${name}:${artifactVersion}"
       
       stage('Release Build And Upload Artifacts') {
          if (isUnix()) {
@@ -151,7 +153,7 @@ node {
          artifactVersion = pom.version
          name = pom.name
          appname = name
-         REPOSITORY_TAG="${env.DOCKERHUB_USERNAME}/${env.ORGANIZATION_NAME}-${name}:${artifactVersion}.${env.BUILD_ID}"
+         REPOSITORY_TAG="${env.DOCKERHUB_USERNAME}/${ORGANIZATION_NAME}-${name}:${artifactVersion}.${env.BUILD_ID}"
          echo "${REPOSITORY_TAG}"
          echo "artifact version : ${artifactVersion}"
       }
