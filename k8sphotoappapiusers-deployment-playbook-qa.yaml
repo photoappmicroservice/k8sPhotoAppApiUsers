@@ -2,7 +2,7 @@
 - name: Create pods using deployment 
   hosts: localhost
   vars:
-    appName: "k8sPhotoAppApiUsers" 
+    appName: "k8sphotoappapiusers" 
   become: true
   user: root
   tasks: 
