@@ -8,6 +8,14 @@
   tasks: 
   - name: test dir
     command: "pwd"
+  - name: create a configmap
+    command: "kubectl apply -f k8s-config.yaml"
+    args:
+      chdir: "/home/ansadmin/jenkins/{{ appName }}/workspace"
+  - name: create a role
+    command: "kubectl apply -f k8s-role.yaml"
+    args:
+      chdir: "/home/ansadmin/jenkins/{{ appName }}/workspace"
   - name: create a deployment
     command: "kubectl apply -f udeploy.yaml"
     args:
