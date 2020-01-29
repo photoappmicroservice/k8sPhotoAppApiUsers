@@ -116,7 +116,7 @@ node {
                               ),
                               sshTransfer(
                                  execTimeout: 999999,
-                                 sourceFiles: "udeploy.yaml,${appname}-playbook-qa.yaml,k8s-config.yaml,k8s-role.yaml",
+                                 sourceFiles: "udeploy.yaml,${appname}-deployment-playbook-qa.yaml,k8s-config.yaml,k8s-role.yaml",
                                  removePrefix: "",
                                  remoteDirectory: "${appname}-qa/workspace",
                                  execCommand: "cd /home/ansadmin/jenkins/${appname}-qa/workspace;ansible-playbook -i /home/ansadmin/jenkins/${appname}-qa/hostconfig/hosts -u ansadmin  /home/ansadmin/jenkins/${appname}-qa/workspace/${appname}-deployment-playbook-qa.yaml;"
