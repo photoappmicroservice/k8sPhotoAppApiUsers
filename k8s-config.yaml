@@ -1,0 +1,23 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: k8sphotoappapiusers
+data:
+  application.properties: |-
+    app.welcomemessage=Hello photoapp user vijaya krishna seemakurthi 5.0
+    app.message=Hi from app.properties
+    app.gatewayip=172.17.0.0/24
+    app.tokenexpirationtime=864000000
+    app.loginurlpath=/users/login
+    app.tokensecret= hfgry463hf746hf573ydh475
+    spring.application.name=pa-user-service
+    spring.devtools.restart.enabled=true
+    spring.h2.console.enabled=true
+    spring.h2.console.settings.web-allow-others=true
+    management.endpoints.web.exposure.include=beans,health,routes,httptrace
+    logging.level.com.appsdeveloperblog.photoapp.api.users.ui.controllers.AlbumController= DEBUG
+    feign.hystrix.enabled=true
+    spring.rabbitmq.host=localhost
+    spring.rabbitmq.port=5672
+    spring.rabbitmq.username=vijay
+    spring.rabbitmq.password=vijay
