@@ -1,7 +1,7 @@
 ---
   - hosts: localhost
     vars:
-      appName: "k8sPhotoAppApiUsers"
+      appName: "k8sphotoappapiusers"
     become: true
     tasks:
     - name: clean the workspace

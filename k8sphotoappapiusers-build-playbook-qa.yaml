@@ -2,7 +2,7 @@
   - hosts: localhost
     become: true
     vars:
-      appName: "k8sPhotoAppApiUsers"
+      appName: "k8sphotoappapiusers"
     tasks:
     - name: clean the workspace
       command: "rm -f *"
