@@ -4,7 +4,7 @@ metadata:
   name: k8sphotoappapiusers
 data:
   application.properties: |-
-    app.welcomemessage=Hello photoapp user vijaya krishna seemakurthi 5.0
+    app.welcomemessage=skaffold up Hello photoapp user vijaya krishna seemakurthi 5.0
     app.message=Hi from app.properties
     app.gatewayip=172.17.0.0/24
     app.tokenexpirationtime=864000000
